@@ -18,6 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -31,11 +32,12 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  
 }
 
 /* Estilos del encabezado */
 .App-header {
-  background: linear-gradient(135deg, var(--background-dark), var(--secondary-color));
+  background-color: #282c34;
   color: var(--text-light);
   display: flex;
   flex-direction: column;
@@ -47,6 +49,7 @@ body {
 }
 
 .hero-container {
+  background: radial-gradient(circle at 50% 50%, #43a4e526, #0000 60%);
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
