@@ -27,6 +27,11 @@ body {
   color: var(--text-dark);
 }
 
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
 .App {
   text-align: center;
   min-height: 100vh;

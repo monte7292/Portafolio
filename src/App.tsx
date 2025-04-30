@@ -37,7 +37,7 @@ function App() {
                     </p>
                   </div>
                 </div>
-                <a href="https://github.com/monte7292" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.niveles.xyz/" target="_blank" rel="noopener noreferrer">
                   Ver página web
                 </a>
               </div>
