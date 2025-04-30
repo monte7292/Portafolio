@@ -3,7 +3,8 @@ import './assets/css/App.css';
 
 /* Imporamos iconos e imagenes para poder utilizar */
 import yoImage from './assets/img/yo.webp';
-import { FaJs, FaReact, FaNodeJs, FaDiscord, FaHtml5 } from 'react-icons/fa';
+import { FaJs, FaReact, FaNodeJs, FaDiscord, FaHtml5, FaBootstrap } from 'react-icons/fa';
+import { SiMongodb } from 'react-icons/si';
 
 function App() {
   return (
@@ -23,8 +24,7 @@ function App() {
               <h1 className="profile-title">Monterito Developer</h1>
               <h2 className="profile-subtitle">Desarrollador Web Full Stack</h2>
               <p className="profile-description">
-                Hola, soy monte7292, estudiante de Desarrollo de Aplicaciones Web (DAW) con más de dos años de experiencia en desarrollo web, bots de Discord y soporte técnico. 
-                Me especializo en crear soluciones digitales eficientes y escalables.
+              Hola, me llamo Alejandro Montero Del Toro, soy estudiante de Desarrollo de Aplicaciones Web (DAW) y tengo más de dos años de experiencia creando bots para Discord, páginas webs y ofreciendo soporte técnico.
               </p>
 
               {/* SECCION DE LOS PROYECTOS */}
@@ -58,6 +58,12 @@ function App() {
                 </span>
                 <span className="skill-tag">
                   {(<FaHtml5 className="skill-icon" />) as React.ReactElement} HTML/CSS
+                </span>
+                <span className="skill-tag">
+                  {(<FaBootstrap className="skill-icon" />) as React.ReactElement} Bootstrap
+                </span>
+                <span className="skill-tag">
+                  {(<SiMongodb className="skill-icon" />) as React.ReactElement} MongoDB
                 </span>
               </div>
 
