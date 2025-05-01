@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 
 /* Imporamos iconos e imagenes para poder utilizar */
 import yoImage from '../assets/img/yo.webp';
+import { 
+  FaGithub,
+  FaTwitter,
+  FaHome,
+  FaBook
+} from 'react-icons/fa';
 
 const Proyectos: React.FC = () => {
   return (
@@ -70,6 +76,21 @@ const Proyectos: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="socialmedia">
+            <Link to="/">
+              <FaHome />
+            </Link>
+            <Link to="/proyectos">
+              <FaBook />
+            </Link>
+            <a href="https://github.com/monte7292" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+            <a href="https://x.com/monterito2002" target="_blank" rel="noopener noreferrer" >
+              <FaTwitter />
+            </a>
+            
         </div>
       </header>
     </div>

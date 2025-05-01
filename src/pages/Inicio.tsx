@@ -3,7 +3,18 @@ import '../assets/css/App.css';
 
 /* Imporamos iconos e imagenes para poder utilizar */
 import yoImage from '../assets/img/yo.webp';
-import { FaJs, FaReact, FaNodeJs, FaDiscord, FaHtml5, FaBootstrap } from 'react-icons/fa';
+import { 
+  FaJs, 
+  FaReact, 
+  FaNodeJs, 
+  FaDiscord, 
+  FaHtml5, 
+  FaBootstrap,
+  FaGithub,
+  FaTwitter,
+  FaHome,
+  FaBook
+} from 'react-icons/fa';
 import { SiMongodb } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 
@@ -60,10 +71,30 @@ function App() {
                 </span>
               </div>
 
+              
+
 
             </div>
           </div>
         </div>
+        <div className="socialmedia">
+          <Link to="/">
+            <FaHome />
+          </Link>
+          <Link to="/proyectos">
+            <FaBook />
+          </Link>
+          <a href="https://github.com/monte7292" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </a>
+          <a href="https://x.com/monterito2002" target="_blank" rel="noopener noreferrer" >
+            <FaTwitter />
+          </a>
+          <a href="https://www.niveles.xyz/" target="_blank" rel="noopener noreferrer" >
+            <FaDiscord />
+          </a>
+          
+      </div>
       </header>
     </div>
   );

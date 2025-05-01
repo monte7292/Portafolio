@@ -145,20 +145,54 @@ a {
 }
 
 .planificacion{
-  background-color: rgb(187, 21, 21);
+  background-color: rgba(187, 21, 21, 0.274);
   font-weight: bold;
   padding: 3px;
   border-radius: 10px;
 }
 
 .terminado{
-  background-color: rgb(105, 170, 9);
+  background-color: rgba(106, 170, 9, 0.568);
   font-weight: bold;
   padding: 3px;
   border-radius: 10px;
 }
 
+.socialmedia a {
+  color: white;
+  margin: 15px;
+  transition: transform 0.3s ease, margin 0.3s ease;
+}
 
+.socialmedia a:hover {
+  transform: scale(1.1);
+  margin: 0 20px; /* Aumenta el espacio lateral */
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 15px 10px 10px 10px;
+  border-radius: 15px;
+  color: white;
+}
+
+.socialmedia {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+
+.socialmedia a svg {
+  transition: transform 0.3s ease;
+  font-size: 1.4em;
+  
+}
+
+.socialmedia a:hover svg {
+  transform: scale(1.1);
+}
 
 .skills-tags {
   display: flex;
