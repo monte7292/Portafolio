@@ -14,55 +14,56 @@ const Proyectos: React.FC = () => {
 
             {/* SECCION DE IMAGEN */}
             <div className="profile-image-container">
-              <img src={yoImage} alt="Montero Developer" className="profile-image" />
+              <img src={yoImage} alt="Alejandro Montero" className="profile-image" />
               <div className="image-border"></div>
               <Link to="/" className="cta-button secondary">
-                    Volver al Inicio
+                    Volver Inicio
                 </Link>
             </div>
 
             {/* SECCION DE TODO SOBRE MI */}
             <div className="profile-content">
-              <h1 className="profile-title">Montero Developer</h1>
+              <h1 className="profile-title">Alejandro Montero</h1>
               <div className="cta-buttons">
               </div>
-              <h2 className="profile-subtitle">Proyectos</h2>
-              <p className="profile-description">
-                asdsadsdasda
-              </p>
+              <h2 className="profile-subtitle">Proyectos:</h2>
 
               {/* SECCION DE LOS PROYECTOS */}
               <div className="projects-section">
                 
                 <div className="proyectos">
-                    <h3 className="section-title">Proyectos Destacados</h3>
+                    <h3 className="section-title">Niveles - Dashboard & Bot de Discord</h3>
                     <div className="projects-grid">
                     <div className="project-card">
-                        <p className="project-description">
-                        Sistema de niveles para Discord con dashboard interactivo y API robusta.
-                        </p>
+                    <span className="terminado">Estado: En desarrollo activo</span>
+                    <p className="project-description">
+                        Niveles.xyz es un bot de Discord avanzado que gamifica servidores con un sistema de niveles, experiencia (XP) y recompensas. 
+                        Incluye un dashboard web interactivo donde los usuarios pueden ver rankings personalizados, configurar recompensas por niveles y ajustar parámetros de XP. 
+                        La plataforma ofrece una API robusta para desarrolladores, estadísticas en tiempo real y roles automáticos al subir de nivel. 
+                        Perfecto para comunidades que buscan aumentar la participación con mecánicas de progreso intuitivas.
+                    </p>
                     </div>
                     </div>
                     <a href="https://www.niveles.xyz/" target="_blank" rel="noopener noreferrer">
-                    Ver página web
+                    Visitar Dashboard
                     </a>
                 </div>
 
 
                 <div className="proyectos">
-                    <h3 className="section-title">Proyectos Destacados</h3>
+                    <h3 className="section-title">Proximamente...</h3>
                     <div className="projects-grid">
                     <div className="project-card">
+                    <span className="planificacion">Estado: En planificación</span>
                         <p className="project-description">
-                        Sistema de niveles para Discord con dashboard interactivo y API robusta.
+
                         </p>
                     </div>
                     </div>
-                    <a href="https://www.niveles.xyz/" target="_blank" rel="noopener noreferrer">
-                    Ver página web
-                    </a>
+                    <Link to="/proyectos">
+                        En desarrollo...
+                    </Link>
                 </div>
-
 
                 
 

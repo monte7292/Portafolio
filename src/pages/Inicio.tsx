@@ -17,9 +17,9 @@ function App() {
 
             {/* SECCION DE IMAGEN */}
             <div className="profile-image-container">
-              <img src={yoImage} alt="Montero Developer" className="profile-image" />
+              <img src={yoImage} alt="Alejandro Montero" className="profile-image" />
               <div className="image-border"></div>
-              <Link to="/proyectos" className="cta-button secondary">
+                <Link to="/proyectos" className="cta-button secondary">
                     Ver Proyectos
                 </Link>
             </div>
@@ -27,7 +27,7 @@ function App() {
 
             {/* SECCION DE TODO SOBRE MI */}
             <div className="profile-content">
-              <h1 className="profile-title">Montero Developer</h1>
+              <h1 className="profile-title">Alejandro Montero</h1>
               <h2 className="profile-subtitle">Desarrollador Web Full Stack</h2>
               <p className="profile-description">
               Hola, me llamo Alejandro Montero Del Toro, soy estudiante de Desarrollo de Aplicaciones Web (DAW) y tengo más de dos años de experiencia creando bots para Discord, páginas webs y ofreciendo soporte técnico.
@@ -58,12 +58,6 @@ function App() {
                 <span className="skill-tag">
                   {(<SiMongodb className="skill-icon" />) as React.ReactElement} MongoDB
                 </span>
-              </div>
-
-
-              {/* SECCION DE LOS BOTONES DE CONTACTAR */}
-              <div className="cta-buttons">
-                
               </div>
 
 

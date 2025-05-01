@@ -135,7 +135,30 @@ a {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   color: rgba(255, 255, 255, 0.9);
+  text-align: justify;
 }
+
+.project-description{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.planificacion{
+  background-color: rgb(187, 21, 21);
+  font-weight: bold;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.terminado{
+  background-color: rgb(105, 170, 9);
+  font-weight: bold;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+
 
 .skills-tags {
   display: flex;
@@ -235,4 +258,11 @@ a {
     flex-direction: column;
     gap: 5rem;
   }
+
+  .profile-image-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
 }
