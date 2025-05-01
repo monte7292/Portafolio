@@ -67,11 +67,6 @@ const Proyectos: React.FC = () => {
 
                 
 
-
-
-
-
-
               </div>
             </div>
           </div>
