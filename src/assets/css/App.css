@@ -49,12 +49,11 @@ a {
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
-  padding-top: 80px; /* Espacio para el navbar */
   min-height: 100vh;
 }
 
 .hero-container {
-  background: radial-gradient(circle at 50% 50%, #43a4e526, #0000 50%);
+  background: radial-gradient(circle at 50% 50%, #43a4e526, #0000 37%);
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -63,9 +62,9 @@ a {
 
 .profile-section {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 2rem;
+  justify-content: center;
 }
 
 .profile-image-container {
@@ -82,6 +81,11 @@ a {
   border: 5px solid var(--primary-color);
   position: relative;
   z-index: 2;
+  margin-bottom: 15px;
+}
+
+.proyectos{
+  margin-bottom: 40px;
 }
 
 .image-border {
@@ -111,6 +115,7 @@ a {
   .profile-content {
     text-align: left;
   }
+  
 }
 
 .profile-title {
@@ -162,6 +167,8 @@ a {
   background-color: var(--primary-color);
   transform: translateY(-2px);
 }
+
+
 
 .cta-buttons {
   display: flex;
@@ -222,5 +229,10 @@ a {
   
   .profile-description {
     font-size: 1rem;
+  }
+
+  .profile-section{
+    flex-direction: column;
+    gap: 5rem;
   }
 }

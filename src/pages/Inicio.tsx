@@ -19,6 +19,9 @@ function App() {
             <div className="profile-image-container">
               <img src={yoImage} alt="Montero Developer" className="profile-image" />
               <div className="image-border"></div>
+              <Link to="/proyectos" className="cta-button secondary">
+                    Ver Proyectos
+                </Link>
             </div>
             
 
@@ -34,11 +37,12 @@ function App() {
               {/* SECCION DE LOS LENGUAJES */}
               <div className="skills-tags">
                 <span className="skill-tag">
-                  {(<FaJs className="skill-icon" />) as React.ReactElement} JavaScript
-                </span>
-                <span className="skill-tag">
                   {(<FaReact className="skill-icon" />) as React.ReactElement} React
                 </span>
+                <span className="skill-tag">
+                  {(<FaJs className="skill-icon" />) as React.ReactElement} JavaScript
+                </span>
+                
                 <span className="skill-tag">
                   {(<FaNodeJs className="skill-icon" />) as React.ReactElement} Node.js
                 </span>
@@ -59,9 +63,7 @@ function App() {
 
               {/* SECCION DE LOS BOTONES DE CONTACTAR */}
               <div className="cta-buttons">
-                <Link to="/proyectos" className="cta-button secondary">
-                    Ver Proyectos
-                </Link>
+                
               </div>
 
 
