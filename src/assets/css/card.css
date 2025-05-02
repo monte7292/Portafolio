@@ -6,7 +6,7 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 1.5rem;
     margin-top: 1.5rem;
@@ -39,9 +39,8 @@
 
 .project-icon {
     font-size: 1.1rem; /* Iconos más pequeños */
-    color: #3498db; /* Color azul para iconos */
+    color: #31abff; /* Color azul para iconos */
     flex-shrink: 0;
-    background: rgba(52, 152, 219, 0.1); /* Fondo azul claro */
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -119,7 +118,7 @@
 
 .tag {
     background: rgba(52, 152, 219, 0.15); /* Fondo azul claro */
-    color: #3498db; /* Texto azul (#3498db) */
+    color: #86bbdf; /* Texto azul (#3498db) */
     padding: 0.25rem 0.6rem;
     border-radius: 6px;
     font-size: 0.7rem;

@@ -77,24 +77,28 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="socialmedia">
-          <Link to="/">
+        <div className="social-media-container">
+          <Link to="/" className="social-icon">
             <FaHome />
+            <span className="icon-tooltip">Inicio</span>
           </Link>
-          <Link to="/proyectos">
+          <Link to="/proyectos" className="social-icon">
             <FaBook />
+            <span className="icon-tooltip">Proyectos</span>
           </Link>
-          <a href="https://github.com/monte7292" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/monte7292" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaGithub />
+            <span className="icon-tooltip">GitHub</span>
           </a>
-          <a href="https://x.com/monterito2002" target="_blank" rel="noopener noreferrer" >
+          <a href="https://x.com/monterito2002" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaTwitter />
+            <span className="icon-tooltip">Twitter</span>
           </a>
-          <a href="https://www.niveles.xyz/" target="_blank" rel="noopener noreferrer" >
+          <a href="https://www.niveles.xyz/" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaDiscord />
+            <span className="icon-tooltip">Discord</span>
           </a>
-          
-      </div>
+        </div>
       </header>
     </div>
   );

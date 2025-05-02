@@ -37,7 +37,7 @@ const Proyectos: React.FC = () => {
       description: "Niveles es una app web hecha con React y TypeScript para administrar niveles y roles en servidores de Discord. Usa Vite, está desplegada en Vercel y cuenta con autenticación OAuth2, manejo seguro de tokens y control de acceso por servidor, garantizando una experiencia segura y escalable",
       link: "https://www.niveles.xyz/",
       icon: <FaDiscord className="project-icon" />,
-      tags: ["Discord.js", "React", "Node.js", "MongoDb" , "Express"]
+      tags: ["TypeScript", "React", "Node.js", "MongoDb" , "Express", "Discord.js", ]
     },
     {
       title: "Portfolio",
@@ -50,7 +50,7 @@ const Proyectos: React.FC = () => {
     },
     {
       title: "API Service",
-      status: "Inactivo",
+      status: "Proximamente...",
       statusClass: "status-inactive",
       description: "Backend para aplicaciones web con autenticación JWT",
       link: "#",
@@ -116,17 +116,26 @@ const Proyectos: React.FC = () => {
           </div>
         </div>
         
-        <div className="socialmedia">
-          <Link to="/"><FaHome /></Link>
-          <Link to="/proyectos"><FaBook /></Link>
-          <a href="https://github.com/monte7292" target="_blank" rel="noopener noreferrer">
+        <div className="social-media-container">
+          <Link to="/" className="social-icon">
+            <FaHome />
+            <span className="icon-tooltip">Inicio</span>
+          </Link>
+          <Link to="/proyectos" className="social-icon">
+            <FaBook />
+            <span className="icon-tooltip">Proyectos</span>
+          </Link>
+          <a href="https://github.com/monte7292" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaGithub />
+            <span className="icon-tooltip">GitHub</span>
           </a>
-          <a href="https://x.com/monterito2002" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/monterito2002" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaTwitter />
+            <span className="icon-tooltip">Twitter</span>
           </a>
-          <a href="https://www.niveles.xyz/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.niveles.xyz/" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaDiscord />
+            <span className="icon-tooltip">Discord</span>
           </a>
         </div>
       </header>
