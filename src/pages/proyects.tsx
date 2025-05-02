@@ -34,7 +34,7 @@ const Proyectos: React.FC = () => {
       title: "Niveles",
       status: "Activo",
       statusClass: "status-active",
-      description: "Bot de Discord con sistema de niveles y recompensas",
+      description: "Niveles es una app web hecha con React y TypeScript para administrar niveles y roles en servidores de Discord. Usa Vite, está desplegada en Vercel y cuenta con autenticación OAuth2, manejo seguro de tokens y control de acceso por servidor, garantizando una experiencia segura y escalable",
       link: "https://www.niveles.xyz/",
       icon: <FaDiscord className="project-icon" />,
       tags: ["Discord.js", "React", "Node.js", "MongoDb" , "Express"]
