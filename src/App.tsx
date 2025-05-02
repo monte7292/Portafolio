@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { ReactNode } from 'react';
 import Home from './pages/Inicio';
 import Proyectos from './pages/proyects';
+import Experiencia from './pages/experiencia';
 
 interface PageAnimationProps {
   children: ReactNode;
@@ -30,6 +31,12 @@ const AnimatedRoutes = () => {
         <Route path="/" element={
             <PageAnimation>
               <Home />
+            </PageAnimation>
+          } 
+        />
+        <Route path="/experiencia" element={
+            <PageAnimation>
+              <Experiencia />
             </PageAnimation>
           } 
         />

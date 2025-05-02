@@ -25,7 +25,10 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: var(--text-dark);
+  overflow-x: hidden;
+  overflow-y: auto; /* Permite scroll vertical */
 }
+
 
 a {
   text-decoration: none;
@@ -174,7 +177,6 @@ a {
 }
 
 .socialmedia {
-  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -359,4 +361,23 @@ a {
   border-width: 5px;
   border-style: solid;
   border-color: white transparent transparent transparent; /* Cambiado el orden de los colores */
+}
+
+/* Estilo para iconos activos */
+.social-icon.active {
+  color: var(--primary-color) !important;
+}
+
+.social-icon.active svg {
+  color: var(--primary-color) !important;
+}
+
+/* Asegurar que el tooltip también se vea bien */
+.social-icon.active .icon-tooltip {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.social-icon.active .icon-tooltip::after {
+  border-top-color: var(--primary-color);
 }

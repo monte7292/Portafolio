@@ -13,10 +13,11 @@ import {
   FaGithub,
   FaTwitter,
   FaHome,
-  FaBook
+  FaBook,
+  FaBriefcase
 } from 'react-icons/fa';
 import { SiMongodb } from 'react-icons/si';
-import { Link } from 'react-router-dom';
+import { Link, NavLink  } from 'react-router-dom';
 
 function App() {
   return (
@@ -77,15 +78,30 @@ function App() {
             </div>
           </div>
         </div>
+
+
         <div className="social-media-container">
-          <Link to="/" className="social-icon">
+          <NavLink 
+            to="/" 
+            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
+          >
             <FaHome />
             <span className="icon-tooltip">Inicio</span>
-          </Link>
-          <Link to="/proyectos" className="social-icon">
+          </NavLink>
+          <NavLink 
+            to="/proyectos"
+            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
+          >
             <FaBook />
             <span className="icon-tooltip">Proyectos</span>
-          </Link>
+          </NavLink>
+          <NavLink 
+            to="/experiencia" 
+            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
+          >
+            <FaBriefcase />
+            <span className="icon-tooltip">Experiencia</span>
+          </NavLink>
           <a href="https://github.com/monte7292" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaGithub />
             <span className="icon-tooltip">GitHub</span>
@@ -94,11 +110,9 @@ function App() {
             <FaTwitter />
             <span className="icon-tooltip">Twitter</span>
           </a>
-          <a href="https://www.niveles.xyz/" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaDiscord />
-            <span className="icon-tooltip">Discord</span>
-          </a>
         </div>
+
+
       </header>
     </div>
   );
