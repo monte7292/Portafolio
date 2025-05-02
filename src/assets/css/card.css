@@ -15,7 +15,7 @@
 .project-card {
     background: rgba(255, 255, 255, 0.03);
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 1rem;
     transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
     border: 1px solid rgba(52, 152, 219, 0.3); /* Borde azul (#3498db) */
     position: relative;
@@ -174,3 +174,4 @@
         padding: 1.2rem;
     }
 }
+

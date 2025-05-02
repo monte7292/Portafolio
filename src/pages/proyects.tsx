@@ -10,8 +10,23 @@ import {
   FaBook,
   FaDiscord,
   FaExternalLinkAlt,
-  FaCode
+  FaCode,
+  FaNodeJs,
+  FaReact
 } from 'react-icons/fa';
+import { SiTypescript, SiPostgresql, SiMongodb, SiExpress } from 'react-icons/si';
+
+// Changed JSX.Element to React.ReactNode and removed unused icons
+const techIcons: Record<string, React.ReactNode> = {
+  'React': <FaReact className="tech-icon" />,
+  'TypeScript': <SiTypescript className="tech-icon" />,
+  'Node.js': <FaNodeJs className="tech-icon" />,
+  'Discord.js': <FaDiscord className="tech-icon" />,
+  'MongoDb': <SiMongodb className="tech-icon" />,
+  'Express': <SiExpress className="tech-icon" />,
+  'PostgreSQL': <SiPostgresql className="tech-icon" />,
+};
+
 
 const Proyectos: React.FC = () => {
   const projects = [
@@ -28,19 +43,10 @@ const Proyectos: React.FC = () => {
       title: "Portfolio",
       status: "Activo",
       statusClass: "status-active",
-      description: "Sitio web personal y portfolio profesional",
+      description: "Sitio web personal , para mostrar mi progreso, proyectos y trabajos.",
       link: "/",
       icon: <FaCode className="project-icon" />,
       tags: ["React", "TypeScript"]
-    },
-    {
-      title: "API Service",
-      status: "Inactivo",
-      statusClass: "status-inactive",
-      description: "Backend para aplicaciones web con autenticación JWT",
-      link: "#",
-      icon: <FaCode className="project-icon" />,
-      tags: ["Node.js", "PostgreSQL"]
     },
     {
       title: "API Service",
@@ -87,7 +93,9 @@ const Proyectos: React.FC = () => {
                       <div className="project-footer">
                         <div className="project-tags">
                           {project.tags.map((tag, tagIndex) => (
-                            <span className="tag" key={tagIndex}>{tag}</span>
+                            <span className="tag" key={tagIndex}>
+                              {techIcons[tag] || <FaCode className="tech-icon" />} {tag}
+                            </span>
                           ))}
                         </div>
                         
