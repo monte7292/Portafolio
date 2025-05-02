@@ -299,7 +299,15 @@ a {
     position: relative;
     width: 150px;
     height: 150px;
-}
+  }
+  
+  .hero-container {
+    background: radial-gradient(circle at 50% 50%, #43a4e526, #0000 25%);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
 
 }
 
