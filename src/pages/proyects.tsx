@@ -8,7 +8,8 @@ import {
   FaGithub,
   FaTwitter,
   FaHome,
-  FaBook
+  FaBook,
+  FaDiscord
 } from 'react-icons/fa';
 
 const Proyectos: React.FC = () => {
@@ -89,6 +90,9 @@ const Proyectos: React.FC = () => {
             </a>
             <a href="https://x.com/monterito2002" target="_blank" rel="noopener noreferrer" >
               <FaTwitter />
+            </a>
+            <a href="https://www.niveles.xyz/" target="_blank" rel="noopener noreferrer" >
+              <FaDiscord />
             </a>
             
         </div>
