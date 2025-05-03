@@ -14,9 +14,14 @@ import {
   FaTwitter,
   FaHome,
   FaBook,
-  FaBriefcase
+  FaBriefcase,
+  FaJava,
+  FaGit
 } from 'react-icons/fa';
-import { SiMongodb } from 'react-icons/si';
+import { 
+  SiMongodb, 
+  SiMysql 
+} from 'react-icons/si';
 import { Link, NavLink  } from 'react-router-dom';
 
 function App() {
@@ -42,7 +47,7 @@ function App() {
               <h1 className="profile-title">Alejandro Montero</h1>
               <h2 className="profile-subtitle">Desarrollador Web Full Stack</h2>
               <p className="profile-description">
-              Hola, me llamo Alejandro Montero Del Toro, soy estudiante de Desarrollo de Aplicaciones Web (DAW) y tengo más de dos años de experiencia creando bots para Discord, páginas webs y ofreciendo soporte técnico.
+              Hola, me llamo Alejandro Montero Del Toro, soy estudiante de Desarrollo de Aplicaciones Web (DAW) y tengo más de tres años de experiencia creando páginas webs, bots de Discord y ofreciendo soporte técnico.
               </p>
 
 
@@ -54,7 +59,15 @@ function App() {
                 <span className="skill-tag">
                   {(<FaJs className="skill-icon" />) as React.ReactElement} JavaScript
                 </span>
-                
+                <span className="skill-tag">
+                  {(<FaJava className="skill-icon" />) as React.ReactElement} Java
+                </span>
+                <span className="skill-tag">
+                  {(<SiMysql className="skill-icon" />) as React.ReactElement} MySql
+                </span>
+                <span className="skill-tag">
+                  {(<FaGit className="skill-icon" />) as React.ReactElement} Git
+                </span>
                 <span className="skill-tag">
                   {(<FaNodeJs className="skill-icon" />) as React.ReactElement} Node.js
                 </span>

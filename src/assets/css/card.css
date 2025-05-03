@@ -20,12 +20,12 @@
 }
 
 .projects-container::-webkit-scrollbar-thumb {
-    background: rgba(52, 152, 219, 0.5);
+    background: rgb(52, 152, 219);
     border-radius: 10px;
 }
 
 .projects-container::-webkit-scrollbar-thumb:hover {
-    background: rgba(52, 152, 219, 0.8);
+    background: rgb(52, 152, 219);
 }
 
 .projects-grid {
@@ -40,7 +40,6 @@
     border-radius: 10px;
     padding: 1rem;
     transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-    border: 1px solid rgba(52, 152, 219, 0.3);
     position: relative;
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
