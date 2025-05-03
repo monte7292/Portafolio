@@ -51,12 +51,11 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem;
   min-height: 100vh;
 }
 
 .hero-container {
-  background: radial-gradient(circle at 50% 50%, #43a4e526, #0000 37%);
+  background: radial-gradient(circle at 50% 50%, #43a4e526, #0000 33%);
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -129,7 +128,6 @@ a {
 
 .profile-subtitle {
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
   color: var(--primary-color);
   font-weight: 400;
 }
@@ -147,19 +145,6 @@ a {
   text-align: justify;
 }
 
-.planificacion{
-  background-color: rgba(187, 21, 21, 0.274);
-  font-weight: bold;
-  padding: 3px;
-  border-radius: 10px;
-}
-
-.terminado{
-  background-color: rgba(106, 170, 9, 0.568);
-  font-weight: bold;
-  padding: 3px;
-  border-radius: 10px;
-}
 
 .socialmedia a {
   color: white;
@@ -182,7 +167,7 @@ a {
   right: 0;
   padding: 10px 0;
   text-align: center;
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  z-index: 1000; 
 }
 
 
@@ -338,7 +323,7 @@ a {
 
 .icon-tooltip {
   position: absolute;
-  bottom: 100%; /* Cambiado de top:100% a bottom:100% */
+  top: 100%; /* Cambiado de top:100% a bottom:100% */
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
@@ -350,25 +335,13 @@ a {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
-  z-index: 10;
+  z-index: 999;
   margin-bottom: 10px; /* Cambiado de margin-top a margin-bottom */
 }
 
 .social-icon:hover .icon-tooltip {
   opacity: 1;
   visibility: visible;
-}
-
-/* Flechita del tooltip */
-.icon-tooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%; /* Cambiado de bottom:100% */
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 5px;
-  border-style: solid;
-  border-color: white transparent transparent transparent; /* Cambiado el orden de los colores */
 }
 
 /* Estilo para iconos activos */
