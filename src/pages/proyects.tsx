@@ -47,8 +47,8 @@ const Proyectos: React.FC = () => {
     },
     {
       title: "Portfolio",
-      status: "Desarrollo...",
-      statusClass: "status-desarrollo",
+      status: "Terminado",
+      statusClass: "status-terminado",
       desarrollo: "Ultima actualización: 03/05/2025",
       description: "Mi sitio web personal es más que un simple portafolio: es una demostración viva de mis habilidades y evolución como desarrollador.",
       link: "/",
