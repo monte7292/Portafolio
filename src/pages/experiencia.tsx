@@ -1,7 +1,8 @@
 import React from 'react';
 import '../assets/css/App.css';
 import '../assets/css/card.css';
-import { Link, NavLink  } from 'react-router-dom';
+import '../assets/css/exp.css';
+import { Link, NavLink } from 'react-router-dom';
 import yoImage from '../assets/img/yo.webp';
 import { 
   FaGithub,
@@ -11,26 +12,82 @@ import {
   FaBriefcase
 } from 'react-icons/fa';
 
+// Importar banderas (asegúrate de tener estas imágenes en tu proyecto)
+import italyFlag from '../assets/img/italia.webp';
+import spainFlag from '../assets/img/espania.webp';
 
 const Experiencia: React.FC = () => {
-  const projects = [
+  const experiences = [
     {
-      title: "Hola Mundo",
-      statusClass: "status-active",
-      description: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas , las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
-      link: "https://www.niveles.xyz/",
+      company: "GEOTRONICS",
+      country: "España",
+      position: "Desarrollo de Aplicaciones Web - Dual Grado Superior",
+      description: `
+    Competencias adquiridas durante la estancia formativa:
+    
+    **ACTIVIDADES / TAREAS LLEVADAS A CABO**
+    - Desarrollo de aplicaciones web con Angular y Spring Boot
+    - Implementación de APIs RESTful
+    - Trabajo con bases de datos relacionales y NoSQL (MongoDB)
+    - Implementación de autenticación JWT y OAuth2
+    - Despliegue de aplicaciones en entornos cloud
+    - Control de versiones con Git y GitHub
+    
+    **COMPETENCIAS RELACIONADAS CON EL EMPLEO**
+    - Desarrollo frontend con Angular (componentes, directivas, servicios)
+    - Desarrollo backend con Java/Spring Boot (microservicios, Spring Cloud)
+    - Implementación de principios SOLID y Clean Code
+    - Trabajo con arquitecturas de microservicios (Eureka, API Gateway)
+    - Integración de sistemas y APIs externas
+    
+    **COMPETENCIAS DE ORGANIZACIÓN / GESTIÓN**
+    - Gestión del tiempo en proyectos de desarrollo ágil
+    - Coordinación con equipos multidisciplinares
+    - Adaptación a nuevas tecnologías y tendencias del sector
+    
+    **COMPETENCIAS COMUNICATIVAS**
+    - Comunicación técnica con equipos de desarrollo
+    - Documentación de proyectos y soluciones técnicas
+    - Trabajo colaborativo en entornos remotos
+    `,
+      period: "2024-2025",
+      flag: spainFlag,
+      status: "Actualmente",
+      statusClass: "status-actualmente"
     },
     {
-      title: "Hola Mundo",
-      statusClass: "status-active",
-      description: ".",
-      link: "https://www.niveles.xyz/",
-    },
-    {
-      title: "Hola Mundo",
-      statusClass: "status-active",
-      description: ".",
-      link: "https://www.niveles.xyz/",
+      company: "RADIO SATA",
+      country: "Italia",
+      position: "Sistemas Microinformáticos y Redes - FCT Grado Medio",
+      description: `
+    Competencias adquiridas durante la estancia formativa:
+    
+    **ACTIVIDADES / TAREAS LLEVADAS A CABO**
+    - Instalación de software
+    - Programación básica
+    - Programación de sitios web y de dispositivos
+    - Montaje y configuración de dispositivos
+    - Detectar disfunciones en sistemas microinformáticos
+    - Recuperación de datos y aplicaciones ante fallos y pérdidas de datos en el sistema
+    
+    **COMPETENCIAS RELACIONADAS CON EL EMPLEO**
+    - Instalar y configurar software básico y de aplicación, redes locales cableadas
+    - Instalar, configurar y mantener servicios multiusuario, aplicaciones y dispositivos compartidos en un entorno de red local
+    - Montar y configurar ordenadores y periféricos
+    - Diagnosticar disfunciones en sistemas microinformáticos y redes
+    - Ejecución de procesos de programación
+    
+    **COMPETENCIAS DE ORGANIZACIÓN / GESTIÓN**
+    - Integrarse en un equipo existente
+    - Organizar las tareas de trabajo con los compañeros
+    
+    **COMPETENCIAS COMUNICATIVAS**
+    - Trabajo en equipo y comunicación con los compañeros
+    `,
+      period: "2023-2024",
+      flag: italyFlag,
+      status: "Terminado",
+      statusClass: "status-terminado"
     },
   ];
 
@@ -52,16 +109,32 @@ const Experiencia: React.FC = () => {
               <h2 className="profile-subtitle">Mi experiencia laboral:</h2>
 
               <div className="projects-container">
-                <div className="projects-grid">
-                  {projects.map((project, index) => (
-                    <div className="project-card" key={index}>
-                      <div className="project-header">
-                        <div>
-                          <h3 className="project-title">{project.title}</h3>
+                <div className="experiences-grid">
+                  {experiences.map((exp, index) => (
+                    <div className="experience-card" key={index}>
+                      <div className="experience-header">
+                        <div className="country-flag-container">
+                          <img src={exp.flag} alt={`Bandera de ${exp.country}`} className="country-flag" />
+                        </div>
+                        <div className="experience-title">
+                          <h3>{exp.company}</h3>
+                          <div className="experience-meta">
+                            <span className="experience-country">🌏 País: {exp.country}</span>
+                            <span className="experience-period">🗓️ Periodo: {exp.period}</span>
+                          </div>
+                          <span className={`project-status ${exp.statusClass}`}>{exp.status}</span>
                         </div>
                       </div>
                       
-                      <p className="project-description">{project.description}</p>
+                      <div className="experience-position">
+                       {exp.position}
+                      </div>
+                      
+                      <div
+                          className="experience-description"
+                          dangerouslySetInnerHTML={{ __html: exp.description.replace(/\n/g, '<br/>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }}
+                        />
+
                     </div>
                   ))}
                 </div>
@@ -70,6 +143,7 @@ const Experiencia: React.FC = () => {
           </div>
         </div>
         
+        {/* Resto del código (social media container) permanece igual */}
         <div className="social-media-container">
           <NavLink 
             to="/" 
@@ -101,8 +175,6 @@ const Experiencia: React.FC = () => {
             <span className="icon-tooltip">Twitter</span>
           </a>
         </div>
-
-
       </header>
     </div>
   );
