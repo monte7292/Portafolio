@@ -38,7 +38,7 @@ const Proyectos: React.FC = () => {
     {
       title: "Niveles",
       status: "Terminado",
-      statusClass: "status-terminado",
+      statusClass: "status-actualmente",
       desarrollo: "Ultima actualización: 22/04/2025",
       description: "Niveles es una app web hecha con React y TypeScript para administrar niveles y roles en servidores de Discord. Usa Vite, está desplegada en Vercel y cuenta con autenticación OAuth2, manejo seguro de tokens y control de acceso por servidor, garantizando una experiencia segura y escalable",
       link: "https://www.niveles.xyz/",
@@ -48,7 +48,7 @@ const Proyectos: React.FC = () => {
     {
       title: "Portfolio",
       status: "Terminado",
-      statusClass: "status-terminado",
+      statusClass: "status-actualmente",
       desarrollo: "Ultima actualización: 03/05/2025",
       description: "Mi sitio web personal es más que un simple portafolio: es una demostración viva de mis habilidades y evolución como desarrollador.",
       link: "/",
@@ -58,7 +58,7 @@ const Proyectos: React.FC = () => {
     {
       title: "---",
       status: "Proximamente...",
-      statusClass: "status-inactive",
+      statusClass: "status-desarrollo",
       desarrollo: "Ultima actualización: --/--/----",
       description: "---",
       link: "#",
