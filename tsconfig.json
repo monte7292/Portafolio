@@ -17,5 +17,5 @@
     "jsx": "react-jsx",
     "types": ["react-icons/fa"]
   },
-  "include": ["src"]
+  "include": ["src", "public/validation.js"]
 }

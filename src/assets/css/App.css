@@ -134,7 +134,6 @@ a {
 
 .profile-description {
   font-size: 1.1rem;
-  margin-bottom: 2rem;
   color: rgba(255, 255, 255, 0.9);
   text-align: justify;
 }
@@ -319,6 +318,11 @@ a {
 .social-icon:hover {
   color: white;
   transform: scale(1.1);
+}
+
+p {
+  margin-top: 0;
+  /* margin-bottom: 1rem; */
 }
 
 .icon-tooltip {

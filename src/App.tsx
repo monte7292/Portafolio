@@ -4,6 +4,7 @@ import { ReactNode } from 'react';
 import Home from './pages/Inicio';
 import Proyectos from './pages/proyects';
 import Experiencia from './pages/experiencia';
+import Contactar from './pages/contactame';
 
 interface PageAnimationProps {
   children: ReactNode;
@@ -43,6 +44,12 @@ const AnimatedRoutes = () => {
         <Route path="/proyectos" element={
             <PageAnimation>
               <Proyectos />
+            </PageAnimation>
+          } 
+        />
+        <Route path="/contactar" element={
+            <PageAnimation>
+              <Contactar />
             </PageAnimation>
           } 
         />

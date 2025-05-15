@@ -8,7 +8,8 @@ import {
   FaTwitter,
   FaHome,
   FaBook,
-  FaBriefcase
+  FaBriefcase,
+  FaPhone
 } from 'react-icons/fa';
 
 
@@ -36,6 +37,13 @@ const Footer: React.FC = () => {
         >
           <FaBriefcase />
           <span className="icon-tooltip">Experiencia</span>
+        </NavLink>
+        <NavLink 
+            to="/contactar" 
+            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
+            >
+            <FaPhone /> {/* Aquí cambiamos el ícono */}
+            <span className="icon-tooltip">Contáctame</span>
         </NavLink>
         <a href="https://github.com/monte7292" target="_blank" rel="noopener noreferrer" className="social-icon">
           <FaGithub />
