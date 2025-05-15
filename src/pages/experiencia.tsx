@@ -2,19 +2,14 @@ import React from 'react';
 import '../assets/css/App.css';
 import '../assets/css/card.css';
 import '../assets/css/exp.css';
-import { Link, NavLink } from 'react-router-dom';
-import yoImage from '../assets/img/yo.webp';
-import { 
-  FaGithub,
-  FaTwitter,
-  FaHome,
-  FaBook,
-  FaBriefcase
-} from 'react-icons/fa';
 
 // Importar banderas (asegúrate de tener estas imágenes en tu proyecto)
 import italyFlag from '../assets/img/italia.webp';
 import spainFlag from '../assets/img/espania.webp';
+
+// Importar componentes
+import Footer from '../components/footer';
+import SobreMi from '../components/sobremifoto';
 
 const Experiencia: React.FC = () => {
   const experiences = [
@@ -96,13 +91,9 @@ const Experiencia: React.FC = () => {
       <header className="App-header">
         <div className="hero-container-proyectos">
           <div className="profile-section">
-            <div className="profile-image-container">
-              <img src={yoImage} alt="Alejandro Montero" className="profile-image" />
-              <div className="image-border"></div>
-              <Link to="/" className="cta-button secondary">
-                Volver Inicio
-              </Link>
-            </div>
+
+            {/* SECCION DE IMAGEN */}
+            <SobreMi/>
 
             <div className="profile-content">
               <h1 className="profile-title">Alejandro Montero</h1>
@@ -143,38 +134,10 @@ const Experiencia: React.FC = () => {
           </div>
         </div>
         
-        {/* Resto del código (social media container) permanece igual */}
-        <div className="social-media-container">
-          <NavLink 
-            to="/" 
-            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
-          >
-            <FaHome />
-            <span className="icon-tooltip">Inicio</span>
-          </NavLink>
-          <NavLink 
-            to="/proyectos"
-            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
-          >
-            <FaBook />
-            <span className="icon-tooltip">Proyectos</span>
-          </NavLink>
-          <NavLink 
-            to="/experiencia" 
-            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
-          >
-            <FaBriefcase />
-            <span className="icon-tooltip">Experiencia</span>
-          </NavLink>
-          <a href="https://github.com/monte7292" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaGithub />
-            <span className="icon-tooltip">GitHub</span>
-          </a>
-          <a href="https://x.com/monterito2002" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaTwitter />
-            <span className="icon-tooltip">Twitter</span>
-          </a>
-        </div>
+        {/* Aquí lo que haremos es cargar un componente para no saturar del mismo código */}
+        <footer>
+          <Footer/>
+        </footer>
       </header>
     </div>
   );

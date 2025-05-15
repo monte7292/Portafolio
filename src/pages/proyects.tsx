@@ -1,23 +1,12 @@
 import React, { useRef, useEffect } from 'react';
 import '../assets/css/App.css';
 import '../assets/css/card.css';
-import { Link, NavLink } from 'react-router-dom';
-import yoImage from '../assets/img/yo.webp';
-import { 
-  FaGithub,
-  FaTwitter,
-  FaHome,
-  FaBook,
-  FaDiscord,
-  FaExternalLinkAlt,
-  FaCode,
-  FaNodeJs,
-  FaReact,
-  FaBriefcase,
-  FaCss3Alt,
-  FaHtml5
-} from 'react-icons/fa';
+import { FaDiscord,FaExternalLinkAlt,FaCode,FaNodeJs,FaReact,FaCss3Alt,FaHtml5} from 'react-icons/fa';
 import { SiTypescript, SiPostgresql, SiMongodb, SiExpress } from 'react-icons/si';
+
+/* Importar componentes */
+import Footer from '../components/footer';
+import SobreMi from '../components/sobremifoto';
 
 
 const techIcons: Record<string, React.ReactNode> = {
@@ -118,13 +107,8 @@ useEffect(() => {
       <header className="App-header">
         <div className="hero-container-proyectos">
           <div className="profile-section">
-            <div className="profile-image-container">
-              <img src={yoImage} alt="Alejandro Montero" className="profile-image" />
-              <div className="image-border"></div>
-              <Link to="/" className="cta-button secondary">
-                Volver Inicio
-              </Link>
-            </div>
+            
+            <SobreMi/>
 
             <div className="profile-content">
               <h1 className="profile-title">Alejandro Montero</h1>
@@ -179,37 +163,10 @@ useEffect(() => {
           </div>
         </div>
         
-        <div className="social-media-container">
-          <NavLink 
-            to="/" 
-            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
-          >
-            <FaHome />
-            <span className="icon-tooltip">Inicio</span>
-          </NavLink>
-          <NavLink 
-            to="/proyectos"
-            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
-          >
-            <FaBook />
-            <span className="icon-tooltip">Proyectos</span>
-          </NavLink>
-          <NavLink 
-            to="/experiencia" 
-            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
-          >
-            <FaBriefcase />
-            <span className="icon-tooltip">Experiencia</span>
-          </NavLink>
-          <a href="https://github.com/monte7292" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaGithub />
-            <span className="icon-tooltip">GitHub</span>
-          </a>
-          <a href="https://x.com/monterito2002" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaTwitter />
-            <span className="icon-tooltip">Twitter</span>
-          </a>
-        </div>
+        <footer>
+          <Footer/>
+        </footer>
+
       </header>
     </div>
   );

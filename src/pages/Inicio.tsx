@@ -2,27 +2,12 @@ import React from 'react';
 import '../assets/css/App.css';
 
 /* Imporamos iconos e imagenes para poder utilizar */
-import yoImage from '../assets/img/yo.webp';
-import { 
-  FaJs, 
-  FaReact, 
-  FaNodeJs, 
-  FaDiscord, 
-  FaHtml5, 
-  FaBootstrap,
-  FaGithub,
-  FaTwitter,
-  FaHome,
-  FaBook,
-  FaBriefcase,
-  FaJava,
-  FaGit
-} from 'react-icons/fa';
-import { 
-  SiMongodb, 
-  SiMysql 
-} from 'react-icons/si';
-import { Link, NavLink  } from 'react-router-dom';
+import { FaJs, FaReact, FaNodeJs, FaDiscord, FaHtml5, FaBootstrap,FaJava,FaGit} from 'react-icons/fa';
+import { SiMongodb, SiMysql } from 'react-icons/si';
+
+/* Importaremos los componentes */
+import Footer from '../components/footer';
+import SobreMi from '../components/sobremifoto';
 
 function App() {
   return (
@@ -33,13 +18,7 @@ function App() {
             
 
             {/* SECCION DE IMAGEN */}
-            <div className="profile-image-container">
-              <img src={yoImage} alt="Alejandro Montero" className="profile-image" />
-              <div className="image-border"></div>
-                <Link to="/proyectos" className="cta-button secondary">
-                    Ver Proyectos
-                </Link>
-            </div>
+            <SobreMi/>
             
 
             {/* SECCION DE TODO SOBRE MI */}
@@ -93,37 +72,9 @@ function App() {
         </div>
 
 
-        <div className="social-media-container">
-          <NavLink 
-            to="/" 
-            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
-          >
-            <FaHome />
-            <span className="icon-tooltip">Inicio</span>
-          </NavLink>
-          <NavLink 
-            to="/proyectos"
-            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
-          >
-            <FaBook />
-            <span className="icon-tooltip">Proyectos</span>
-          </NavLink>
-          <NavLink 
-            to="/experiencia" 
-            className={({ isActive }) => isActive ? "social-icon active" : "social-icon"}
-          >
-            <FaBriefcase />
-            <span className="icon-tooltip">Experiencia</span>
-          </NavLink>
-          <a href="https://github.com/monte7292" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaGithub />
-            <span className="icon-tooltip">GitHub</span>
-          </a>
-          <a href="https://x.com/monterito2002" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaTwitter />
-            <span className="icon-tooltip">Twitter</span>
-          </a>
-        </div>
+        <footer>
+          <Footer/>
+        </footer>
 
 
       </header>
