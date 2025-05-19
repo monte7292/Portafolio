@@ -37,7 +37,6 @@ const Contactar: React.FC = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const form = event.currentTarget;
   };
 
   return (
