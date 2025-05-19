@@ -38,10 +38,6 @@ const Contactar: React.FC = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.currentTarget;
-    if (form.checkValidity()) {
-      console.log('Formulario enviado correctamente');
-      // Aquí puedes agregar la lógica de envío
-    }
   };
 
   return (
@@ -122,7 +118,7 @@ const Contactar: React.FC = () => {
                     Por favor escribe tu mensaje.
                     </div>
                 </div>
-                <button type="submit" className="btn btn-primary">Enviar</button>
+                <button className="btn btn-primary">*En Desarrollo*</button>
                 </form>
                 </div>
             </div>

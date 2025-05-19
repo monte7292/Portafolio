@@ -246,6 +246,6 @@
     height: 130px; /* Ajusta según hasta dónde quieres que llegue */
     background: linear-gradient(to top, #282c34, transparent);
     pointer-events: none; /* Para que no bloquee clics */
-    z-index: 5;
+    
 }
 
